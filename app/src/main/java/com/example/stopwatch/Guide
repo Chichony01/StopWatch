@@ -1,0 +1,6 @@
+-> When user clicks on start button then startOrstop function will be called.
+-> From there start function willbe called, it will invoke startService function and will pass the intent with the current time
+-> After that onStartCommand function of the StopWatchService class will get triggered.
+-> That function will invoke inner class stopWatchTimerTask
+-> Inside the class current time will be incresed by 1 second
+-> Now that new time will be recieved by BroadcastReceiver and displayed in the text view
